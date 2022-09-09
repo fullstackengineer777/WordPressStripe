@@ -1,0 +1,30 @@
+html, body{
+	-webkit-font-smoothing: antialiased
+}
+html, body, ul, ol{
+	margin: 0; padding: 0;
+	font-family: CeraPRO;
+    font-size: 1rem;
+    color: #042330
+}
+body{
+	height: 100%;
+}
+.start {
+    padding-top: 45px;
+    padding-bottom: 174px;
+    height: 100%;
+    background: url(../images/bg-pc.webp) no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+    background-color: #D7EAFE;
+}
+
+.start .container {
+    height: 100%;
+}
+.start-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
