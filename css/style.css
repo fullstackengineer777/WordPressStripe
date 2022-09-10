@@ -1,5 +1,5 @@
 html, body{
-	-webkit-font-smoothing: antialiased
+	
 }
 html, body, ul, ol{
 	margin: 0; padding: 0;
@@ -7,9 +7,14 @@ html, body, ul, ol{
     font-size: 1rem;
     color: #042330
 }
-body{
+body,html{
 	height: 100%;
+	-webkit-font-smoothing: antialiased
 }
+body{
+	display: flex;
+	flex-direction: column;
+}	
 .start {
     padding-top: 45px;
     padding-bottom: 174px;
@@ -23,8 +28,249 @@ body{
 .start .container {
     height: 100%;
 }
+.blinkist-logo{
+    top: auto;
+}
+.blinkist-logo-img{
+
+    width: 180px;
+    heigth: 60px;
+}
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    width: 100%
+}
+@media(min-width:416px) {
+    .container {
+        padding-left: 3rem;
+        padding-right: 3rem
+    }
+}
+
+@media(min-width:1024px) {
+    .container {
+        padding-left: 2.25rem;
+        padding-right: 2.25rem
+    }
+}
+
 .start-wrapper {
     display: flex;
     flex-direction: column;
+    /*height: 100%;*/
+}
+.start-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.start-text {
+    max-width: 630px;
+    margin-bottom: 22px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #002E48;
+}
+.start-title {
+    max-width: 630px;
+    margin-bottom: 26px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #002E48;
+}
+.arrow-wrap {
+    margin-bottom: 32px;
+}
+.arrow-wrap__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #002E48;
+    margin-bottom: 24px;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.start-action {
+    max-width: 561px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 12px;
+    margin: 0 auto;
+}
+
+.cta {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1;
+    color: #03314b;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: inherit;
+    text-align: center;
+    text-decoration: none;
+    background-color: #2ce080;
+    border: .125rem solid #2ce080;
+    border-radius: .25rem;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    min-width: 18.5rem
+}
+.start-action  .cta {
+    min-width: auto;
+    width: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    padding: 12px 8px;
+    position: relative;
+    z-index: 1;
+}
+.start-action  .cta::after {
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    content: "";
     height: 100%;
+    width: 100%;
+    background: rgba(44, 224, 128, 0.6);
+    border-radius: 4px;
+    animation-name: ripple;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+    z-index: -1;
+  }
+  .start-action  .cta::before {
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(44, 224, 128, 0.6);
+    border-radius: 4px;
+    animation-name: ripple;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+    z-index: -1;
+  }
+  
+
+/* specialty */
+@media(min-width: 1024px){
+    .long-onboarding{
+        overflow-x: hidden;
+    }
+}
+.onboarding-screen{
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+/*.page {
+    flex-grow: 1;
+    background-color: #fff
+}*/
+.query-main-board{
+    margin: 0 auto;
+    padding:  0 1rem;
+    max-width: 28rem !important;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+.query-title{
+    font-size: ;
+    margin: 0 0 1em 0;
+    text-align: center;
+}
+.query-item{
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #f1f6f4;
+    border: 2px solid #f1f6f4;
+    border-radius: 4px;
+    color: #03314b;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.33;
+}
+.query-item:focus{
+    border-color: #2ce080;
+}
+.continue-sticky{
+    position: sticky;    
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+
+
+/******** common *************/
+.pt-6{
+    paddng-top: 1.5rem !important;
+}
+.mb-8{
+    margin-bottom: 2rem !important;
+}
+.mx-auto{
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.w-full{
+    width: 100% !important;
+}
+h3{
+   font-family: CeraPRO;
+   color: #042330;
+   font-size: 30px;
+   margin: 0;
 }

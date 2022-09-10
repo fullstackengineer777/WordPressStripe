@@ -30847,7 +30847,7 @@ select.form__input[data-v-6adf8240] {
     background-color: #f1f6f4
 }
 
-body,
+/*body,
 html {
     height: 100%
 }
@@ -30856,7 +30856,7 @@ body {
     display: flex;
     flex-direction: column
 }
-
+*/
 .page {
     flex-grow: 1;
     background-color: #fff
