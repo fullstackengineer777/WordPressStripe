@@ -292,7 +292,12 @@ body{
 @media(min-width: 768px){
 
 }
-
+/********* success  ***********/
+.query-title h3 > mark{
+    background-color: white;
+    color: blue;
+    font-weight: 700;
+}
 /******** common *************/
 .pt-6{
     paddng-top: 1.5rem !important;
