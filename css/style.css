@@ -2,8 +2,8 @@ html, body{
 	
 }
 html, body, ul, ol{
+	font-family: 'Gotham', sans-serif;
 	margin: 0; padding: 0;
-	font-family: CeraPRO;
     font-size: 1rem;
     color: #042330
 }
@@ -29,6 +29,7 @@ body{
     height: 100%;
 }
 .blinkist-logo{
+    padding-top: 1.5rem ;
     top: auto;
 }
 .blinkist-logo-img{
@@ -128,8 +129,8 @@ body{
     font-family: inherit;
     text-align: center;
     text-decoration: none;
-    background-color: #2ce080;
-    border: .125rem solid #2ce080;
+    background-color: rgb(253,149,52);
+    border: .125rem rgb(253,149,52);
     border-radius: .25rem;
     outline: none;
     cursor: pointer;
@@ -207,10 +208,14 @@ body{
     padding-bottom: 90px;
     display: flex;
     flex-direction: column;
+
 }
 .flex-col{
     display: flex;
     flex-direction: column;
+}
+.onboarding-screen > .flex-col{
+    min-height: 500px;
 }
 /*.page {
     flex-grow: 1;
@@ -252,8 +257,49 @@ body{
     text-align: center;
 }
 
+.cta_btn{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 3;
+    color: #03314b  ;
+    background-color: rgb(253,149,52);
+    border-radius: 4px;
+    text-align: center;
+}
+.cta_btn:hover{  
+    color: #03314b;
+    background-color: rgb(253,121,2);
+    border-color: rgb(253,121,2);
+}
 
-
+.progress-board{
+    height: 0.5rem;
+    max-width: 28rem;
+    margin: 0rem auto 2rem auto !important;
+}
+.dark-ranger{
+    position: relative;
+    min-width: 5rem;
+    height: .25rem;
+    padding-right: .375rem;
+    border-radius: 4px;
+    
+}
+/*.dark-ranger .dark-ranger--light{
+    background-color: #2ce080;
+}*/
+/*.dark-ranger .dark-ranger--light .dark-ranger--rounded{
+    color: black;
+}*/
+.dark-ranger__path{
+    height: inherit;    
+    background-color: #f1f6f4;
+}
+.dark-ranger__trail{
+    background-color: rgb(253,149,52);
+    height: inherit;
+}
 /******** common *************/
 .pt-6{
     paddng-top: 1.5rem !important;
