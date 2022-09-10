@@ -298,6 +298,70 @@ body{
     color: blue;
     font-weight: 700;
 }
+/************omnichannel******************/
+.choose-plan-trial__date{
+    display: flex;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.choose-plan-trial__bullet {
+    z-index: 2;
+    display: block;
+    flex-shrink: 0;
+    width: 1rem;
+    height: 1rem;
+    margin-top: .5rem;
+    margin-right: 1rem;
+    background-color: #0365f2;
+    border-radius: 100%
+}
+
+.choose-plan-trial__axis {
+    position: absolute;
+    top: 1rem;
+    bottom: -3rem;
+    left: .5rem;
+    z-index: 1;
+    display: block;
+    width: 4px;
+    background-color: #0365f2;
+    transform: translateX(-50%)
+}
+.choose-plan-trial__label {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.33;
+    color: #0365f2;
+    margin: 0
+}
+.choose-plan-trial__text {
+    margin: 0
+}
+.unlock .choose-plan-trial__axis {
+    width: 18px;
+    left: 0;
+    transform: none;
+}
+.unlock .choose-plan-trial__bullet {
+    width: 18px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-right: 16px;
+    padding-bottom: 4px;
+}
+.choose-plan-trial__date:last-child .choose-plan-trial__axis {
+    background: linear-gradient(180deg, #2CE080 4.04%, rgba(44, 224, 128, 0) 90.4%);
+    border-radius: 51px;
+    width: 18px;
+    bottom: -33px;
+    top: 15px;
+    border-radius: 0 0 51px 51px;
+}
+
 /******** common *************/
 .pt-6{
     paddng-top: 1.5rem !important;
