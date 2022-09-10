@@ -230,25 +230,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-.query-title{
-    font-size: ;
-    margin: 0 0 1em 0;
-    text-align: center;
-}
-.query-item{
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    background-color: #f1f6f4;
-    border: 2px solid #f1f6f4;
-    border-radius: 4px;
-    color: #03314b;
-    font-size: 1.125rem;
-    font-weight: 700;
-    line-height: 1.33;
-}
-.query-item:focus{
-    border-color: #2ce080;
-}
+
 .continue-sticky{
     position: sticky;    
     margin-top: 0.5rem;
@@ -300,6 +282,17 @@ body{
     background-color: rgb(253,149,52);
     height: inherit;
 }
+/************ term page **************/
+.query-img-con{
+    text-align: center;    
+}
+.query-img{
+    max-width: 259px;
+}
+@media(min-width: 768px){
+
+}
+
 /******** common *************/
 .pt-6{
     paddng-top: 1.5rem !important;
@@ -319,4 +312,32 @@ h3{
    color: #042330;
    font-size: 30px;
    margin: 0;
+}
+.query-title{
+    font-size: ;
+    margin: 0 0 1em 0;
+    text-align: center;
+}
+.query-item{
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #f1f6f4;
+    border: 2px solid #f1f6f4;
+    border-radius: 4px;
+    color: #03314b;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.33;
+}
+.query-item:focus{
+    border-color: rgb(253,121,2);;
+}
+.query-description{
+    padding: 0 2rem;
+    text-align: center;
+}
+.query-description > mark{
+    background-color: white;
+    font-weight: 700;
+    color: blue;
 }
