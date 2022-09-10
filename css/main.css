@@ -1057,7 +1057,7 @@ a:hover {
     height: .625rem !important
 }
 
-.h-full {
+.h-full {   
     height: 100% !important
 }
 
@@ -1149,7 +1149,7 @@ a:hover {
     flex-shrink: 1 !important
 }
 
-.flex-grow {
+.AQ1 
     flex-grow: 1 !important
 }
 
@@ -2635,7 +2635,7 @@ a:hover {
 
 @media(max-width:767px) {
     .book-card-player__element--total {
-        padding-right: 0
+        padding-right:  
     }
 }
 
@@ -30771,7 +30771,7 @@ select.form__input[data-v-6adf8240] {
         font-size: 3rem;
         font-weight: 700;
         line-height: 1.25;
-        color: #03314b
+        color: #03314b  
     }
 }
 
@@ -79862,7 +79862,7 @@ select.form__input[data-v-1c1b3388] {
 }
 
 .onboarding-option--active[data-v-1c1b3388] {
-    border-color: #2ce080
+    border-color:   
 }
 
 .button[data-v-8c6fde1a] {
@@ -114507,6 +114507,7 @@ input[type=number] {
 .find-block li:last-child {
     margin-bottom: 0;
 }
+
 .find-block-bottom {
     font-weight: 500;
     font-size: 12px;
