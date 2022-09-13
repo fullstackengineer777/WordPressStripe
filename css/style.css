@@ -1,8 +1,8 @@
-html, body{
-	
+*{
+	font-family: GOTHAM;
 }
 html, body, ul, ol{
-	font-family: 'Gotham', sans-serif;
+	font-family: 'Gotham';
 	margin: 0; padding: 0;
     font-size: 1rem;
     color: #042330
@@ -234,6 +234,7 @@ body{
         min-height: auto!important;
     }
     .onboarding-screen{
+        padding-top: 1rem;
         padding-bottom: 90px !important;
     }
 }
@@ -244,7 +245,7 @@ body{
 .query-main-board{
     margin: 0 auto;
     padding:  0 1rem;
-    /*max-width: 28rem !important;*/
+    max-width: 28rem !important;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -253,12 +254,14 @@ body{
 @media(max-width: 768px){
     .query-main-board{
 
-        width:100%;
+        /*width:100%;*/
     }
 }
 
 .continue-sticky{
-    position: sticky;    
+    position: fixed;  
+    bottom: 0;  
+    width: 100%;
     margin-top: 0.5rem;
     padding-top: 1rem;
     padding-bottom: 1.5rem;
@@ -284,7 +287,7 @@ body{
 .progress-board{
     height: 0.5rem;
     max-width: 28rem;
-    margin: 0rem auto 2rem auto !important;
+    margin: 1rem auto 2rem auto !important;
 }
 .dark-ranger{
     position: relative;
@@ -544,12 +547,13 @@ body{
     #ffffff 100%
   );
 }
-/************ brandname *******************/
+/************ brandname , solve*******************/
 .query-input-content{    
     box-sizing: border-box;
     border: 2px solid #e1e7ea;
     border-radius: 4px;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto 1rem auto;
     min-width: 0;
     padding: .625rem .875rem;
     color: #3a4649;
@@ -558,20 +562,14 @@ body{
     font-family: CeraPRO;
     line-height: 1.25;
     background: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
-    margin-bottom: 1rem;
 }
-/***********solve*************/
 
- .query-input-content:hover , .query-input-content:focus{
+.query-input-content:hover , .query-input-content:focus{
     border:  2px solid rgb(253,149,52);
     color: rgb(253,149,52);
 }
-/*input[type='text']:focus{
-    border-color: #ff0000;
-}*/
+
 /************industry**********/
 .query_sel_btn{
     width: auto;
@@ -593,6 +591,18 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+@media(max-width: 768px){
+    .query-content-btn-board{
+        width: 80%;
+        display:flex;
+        flex-direction:column;
+        align-items:left;
+        margin: auto;
+    }
+    .query_sel_btn{
+        width: 100%;
+    }
 }
 .query-sel-svg{
     display: block;
@@ -690,7 +700,6 @@ body{
     width: 100% !important;
 }
 h3{
-   font-family: CeraPRO;
    color: #042330;
    font-size: 30px;
    margin: 0;
@@ -727,7 +736,13 @@ h3{
     .query-content-board{
         width: 30rem;
         margin: 0 auto;
+        text-align: center;
     }   
+}
+@media(max-width: 768px){
+    .query-content-board{
+        text-align: center;
+    }
 }
 .query-input-board{
     margin: 0 0 1rem 0;
@@ -859,4 +874,8 @@ h3{
     width: 20px;
     height: 18px;
     fill: #0365f2
+}
+
+.choose-plan-trial__timeline{
+    text-align: left;
 }
