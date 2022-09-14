@@ -113941,6 +113941,7 @@ input[type=number] {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    padding-top: 100px;
 }
 .start-text {
     max-width: 630px;

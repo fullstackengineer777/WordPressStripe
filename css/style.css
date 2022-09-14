@@ -1,6 +1,47 @@
-*{
-	font-family: GOTHAM;
+    /*color:white;*/
+    /*background-color: #f37648;*/
+    /*background-image: linear-gradient(0deg, rgba(255,255,255,0), #fff);*/
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham Bold Regular.ttf'); /* IE9 Compat Modes */
+  font-weight: 700;
+  font-style: normal;
+ }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham Bold Regular.ttf'); /* IE9 Compat Modes */
+   font-weight: 400;
+   font-style: normal;
+ }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham Bold Regular.ttf'); /* IE9 Compat Modes */
+   font-weight: 300;
+   font-style: normal;
+ }
+
+body {
+ font-family: Gotham, Gotham-Book, Arial, sans-serif;
 }
+
+// For normal
+.normal {
+  font-weight: 400;
+}
+
+// For bold
+.bold,
+strong {
+  font-weight: 700;
+}
+
+// For thin
+.light {
+  font-weight: 300;
+}
+
 html, body, ul, ol{
 	font-family: 'Gotham';
 	margin: 0; padding: 0;
@@ -17,7 +58,7 @@ body{
 }	
 .start {
     padding-top: 45px;
-    padding-bottom: 174px;
+    padding-bottom: 100px;
     height: 100%;
     background: url(../images/bg-pc.webp) no-repeat;
     background-size: 100% auto;
@@ -72,7 +113,7 @@ body{
 .start-wrapper {
     display: flex;
     flex-direction: column;
-    /*height: 100%;*/
+    height: 100%;
 }
 .start-content {
     flex: 1;
@@ -80,6 +121,7 @@ body{
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    /*padding-top: 150px;*/
 }
 .start-text {
     max-width: 630px;
@@ -100,23 +142,6 @@ body{
     text-align: center;
     color: #002E48;
 }
-.arrow-wrap {
-    margin-bottom: 32px;
-}
-.arrow-wrap__text {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: center;
-    color: #002E48;
-    margin-bottom: 24px;
-}
-.arrow{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-}
-
 .start-action {
     max-width: 561px;
     width: 100%;
@@ -130,7 +155,7 @@ body{
     font-size: 1rem;
     font-weight: 500;
     line-height: 1;
-    color: #03314b;
+    /*color: #white;*/
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -148,17 +173,82 @@ body{
     appearance: none;
     min-width: 18.5rem
 }
-.start-action  .cta {
+.start-action .cta {
     min-width: auto;
     width: 100%;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 20px;
     line-height: 25px;
     text-align: center;
     padding: 12px 8px;
     position: relative;
     z-index: 1;
+    color: white;
+    /*color:white;*/
+    
+    background-image: linear-gradient(0deg, rgba(255,255,255,0), #e5cfcf);
+    border-radius: 16px;
 }
+@media(max-width:768px){
+    
+    .start{
+        padding-top: 22px;
+        padding-bottom: 57px;
+        height: 100%;
+        background: url(../images/start.webp) no-repeat;    
+        background-size: 100% auto;
+        background-position: top center;
+        background-color: #D7EAFE;
+    }
+    .start-text {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 12px;
+    }
+    .start-action .cta {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        height: 56px;
+        padding: 8px 5px;
+        /*color:white;*/
+    /*background-color: #f37648;*/
+    /*background-image: linear-gradient(0deg, rgba(255,255,255,0), #fff);*/
+    }
+    .start-title {
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 14px;
+    }
+    .start .container {
+        position: relative;
+        z-index: 1;
+    }
+    .blinkist-logo{
+        padding-top: 0;
+    }
+   /* .start-content{
+        padding-top: 200px;
+    }*/
+}
+.arrow-wrap {
+    margin-bottom: 32px;
+}
+.arrow-wrap__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #002E48;
+    margin-bottom: 24px;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
 .start-action  .cta::after {
     opacity: 0;
     display: flex;
@@ -277,9 +367,13 @@ body{
     background-color: rgb(253,149,52);
     border-radius: 4px;
     text-align: center;
+
+    color:white;
+    background-image: linear-gradient(0deg, rgba(255,255,255,0), #e5cfcf);
+    border-radius: 16px;
 }
 .cta_btn:hover{  
-    color: #03314b;
+    color: #white;
     background-color: rgb(253,121,2);
     border-color: rgb(253,121,2);
 }
@@ -513,8 +607,8 @@ body{
     margin-right: 9px;
 }
 .find-review p {
-    font-weight: 400;
-    font-size: 12px;
+    font-weight: 200;
+    font-size: 10px;
     line-height: 145%;
     color: #0D0D0D;
 }
@@ -551,7 +645,7 @@ body{
 .query-input-content{    
     box-sizing: border-box;
     border: 2px solid #e1e7ea;
-    border-radius: 4px;
+    border-radius: 16px;
     width: 80%;
     margin: 0 auto 1rem auto;
     min-width: 0;
@@ -714,7 +808,7 @@ h3{
     padding: 0.5rem;
     background-color: #f1f6f4;
     border: 2px solid #f1f6f4;
-    border-radius: 4px;
+    border-radius: 16px;
     color: #03314b;
     font-size: 1.125rem;
     font-weight: 700;
