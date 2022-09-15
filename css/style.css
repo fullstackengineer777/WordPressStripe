@@ -1,29 +1,107 @@
-    /*color:white;*/
-    /*background-color: #f37648;*/
-    /*background-image: linear-gradient(0deg, rgba(255,255,255,0), #fff);*/
-@font-face {
-  font-family: 'Gotham';
-  src: url('../fonts/Gotham Bold Regular.ttf'); /* IE9 Compat Modes */
-  font-weight: 700;
-  font-style: normal;
- }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('../fonts/Gotham Bold Regular.ttf'); /* IE9 Compat Modes */
-   font-weight: 400;
+   font-family: Gotham-Bold;
+   src: url('../fonts/GothamBold.ttf') format('truetype');
+   src: url('../fonts/Gotham-Bold.otf') format('OpenType');
+   font-weight: 700;
+   font-style: normal;
+ }
+/* @font-face {
+   font-family: 'Gotham';
+   src: url('../fonts/GothamBoldItalic.ttf') ,
+   font-weight: 700;
+   font-style: italic;
+ }*/
+ @font-face {
+  font-family: Gotham-Black;
+  src: url('../fonts/Gotham-Black.otf') format('OpenType');
+   font-weight: 900;
    font-style: normal;
  }
 
-@font-face {
-  font-family: 'Gotham';
-  src: url('../fonts/Gotham Bold Regular.ttf'); /* IE9 Compat Modes */
-   font-weight: 300;
+ @font-face {
+   font-family: Gotham-Book;
+   src: url('../fonts/GothamBook.ttf')  format('truetype');/* Modern Browsers */
+   font-weight: 700;
    font-style: normal;
  }
+/* @font-face {
+   font-family: 'Gotham';
+   src: url('../fonts/Gotham-BookItalic.otf') ,
+     url('../fonts/GothamBookItalic.ttf') , 
+   font-weight: 700;
+   font-style: italic;
+ }*/
+
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url('../fonts/Gotham-Medium.ttf') format('truetype');
+   font-weight: 500;
+   font-style: normal;
+ }
+/* @font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothamMediumItalic.ttf'),
+   font-weight: 500;
+   font-style: italic;
+ }*/
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Light.otf') format('OpenType'),
+       url('../fonts/GothamLight.ttf')  format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+/*@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/GothamLightItalic.ttf'); 
+    font-weight: 300;
+    font-style: italic;
+}
+*/
+@font-face {
+    font-family: 'Gotham-XLight';
+    src: url('../fonts/Gotham-XLight.otf')  format('OpenType'); 
+    font-weight: 200;
+    font-style: normal;
+}
+/*@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-XLightItalic.otf');
+    font-weight: 200;
+    font-style: normal;
+}*/
+
+
+@font-face {
+    font-family: 'Gotham-Thin';
+    src: url('../fonts/Gotham-Thin.otf') format('OpenType'); 
+    font-weight: 100;
+    font-style: normal;
+}
+/*@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-ThinItalic.otf'); 
+    font-weight: 100;
+    font-style: italic;
+}*/
 
 body {
- font-family: Gotham, Gotham-Book, Arial, sans-serif;
+   font-family: 'Gotham',sans-serif !important;
+
+}
+/*.ubold{
+    font-weight: 900;
+}
+
+.bold,
+strong {
+  font-weight: 700;
+}
+
+.medium{
+    font-weight: 500;
 }
 
 // For normal
@@ -32,18 +110,21 @@ body {
 }
 
 // For bold
-.bold,
-strong {
-  font-weight: 700;
-}
 
 // For thin
 .light {
   font-weight: 300;
 }
+.xlight{
+    font-weight: 200;
+}
+.thin {
+    font-weight: 100;
+}*/
+
+
 
 html, body, ul, ol{
-	font-family: 'Gotham';
 	margin: 0; padding: 0;
     font-size: 1rem;
     color: #042330
@@ -56,6 +137,9 @@ body{
 	display: flex;
 	flex-direction: column;
 }	
+h3{
+    font-family: Gotham-Bold,sans-serif;
+}
 .start {
     padding-top: 45px;
     padding-bottom: 100px;
@@ -70,6 +154,11 @@ body{
     height: 100%;
 }
 .blinkist-logo{
+    text-align: center;
+    padding-top: 1.5rem ;
+    top: auto;
+}
+.blinkist-logo-start{
     padding-top: 1.5rem ;
     top: auto;
 }
@@ -101,12 +190,13 @@ body{
     }
 }
 
-.hidden{
+/*.hidden{
     display: none;
-}
+}*/
 @media (min-width:768px) {
     .m\:flex {
         display: flex !important;
+        justify-content: center;
     }
 }
 
@@ -160,7 +250,6 @@ body{
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    font-family: inherit;
     text-align: center;
     text-decoration: none;
     background-color: rgb(253,149,52);
@@ -225,6 +314,7 @@ body{
         z-index: 1;
     }
     .blinkist-logo{
+        text-align: center;
         padding-top: 0;
     }
    /* .start-content{
@@ -324,8 +414,8 @@ body{
         min-height: auto!important;
     }
     .onboarding-screen{
-        padding-top: 1rem;
-        padding-bottom: 90px !important;
+        padding-top: 0.5rem;
+        padding-bottom: 10px !important;
     }
 }
 /*.page {
@@ -381,7 +471,7 @@ body{
 .progress-board{
     height: 0.5rem;
     max-width: 28rem;
-    margin: 1rem auto 2rem auto !important;
+    margin: 0 auto 5px auto !important;
 }
 .dark-ranger{
     position: relative;
@@ -419,7 +509,7 @@ body{
 .query-title h3 > mark{
     background-color: white;
     color: blue;
-    font-weight: 700;
+    font-family: Gotham-Bold, sans-serif; !important;
 }
 /************omnichannel******************/
 .choose-plan-trial__date{
@@ -653,7 +743,7 @@ body{
     color: #3a4649;
     font-weight: 500;
     font-size: 1rem;
-    font-family: CeraPRO;
+    font-family: Gotham;
     line-height: 1.25;
     background: none;
     appearance: none;
@@ -799,8 +889,8 @@ h3{
    margin: 0;
 }
 .query-title{
-    font-size: ;
-    margin: 0 0 1em 0;
+    font-family: Gotham-Bold , sans-serif !important;
+    margin: 0 0 0.5rem 0;
     text-align: center;
 }
 .query-item{
