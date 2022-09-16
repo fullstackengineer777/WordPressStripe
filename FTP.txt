@@ -1,0 +1,11 @@
+
+FTP hostname: ftp.derens.sg-host.com
+Port: 21
+hhthfgyrw@derens.sg-host.com
+^65!p7fT179!
+
+1: build 30 pages (200)
+2: integrate into website on our server (100)
+3: integrate and test Stripe payments (100)
+4: integrate answers into CRM (100)
+5: leave 5-star review and give you next project

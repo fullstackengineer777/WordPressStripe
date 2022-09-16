@@ -455,7 +455,6 @@ h3{
     line-height: 3;
     color: #03314b  ;
     background-color: rgb(253,149,52);
-    border-radius: 4px;
     text-align: center;
 
     color:white;
@@ -1062,4 +1061,321 @@ h3{
 
 .choose-plan-trial__timeline{
     text-align: left;
+}
+
+.signup-form__form {
+    max-width: 100%
+}
+
+@media(min-width:768px) {
+    .signup-form__form {
+        max-width: inherit
+    }
+}
+
+.form {
+    max-width: 25rem
+}
+
+.form__field {
+    width: 100%
+}
+
+.enter-form {
+    max-width: 630px;
+    width: 100%;
+    margin: 0 auto;
+}
+.enter-form .form {
+    max-width: 100%;
+    margin-bottom: 0;
+}
+.enter-form  .signup-form__input {
+    margin-bottom: 12px;
+}
+input:focus, input:hover {
+    outline: 2px solid rgb(253,121,2);
+}
+.enter-form .form__field-container input {
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    padding-left: 14px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    height: 55px;
+    box-sizing: border-box;
+    /*border: 2px solid rgb(253,149,52);*/
+    width: 100%;
+    outline:  2px solid rgb(253,149,52);
+}
+.form__field-container[data-v-c330ecd8] {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid #bac8ce;
+    border-radius: .25rem
+}
+
+.form__field-container[data-v-c330ecd8]:focus {
+    border-color: #2ce080
+}
+.signup-form__input--password {
+    display: none;
+}
+.enter-form input[name="email"].error {
+    border-color: #F23061;
+    animation: shake 0.2s ease-in-out 0s 2;
+}
+
+
+.enter-form .signup-form__cta {
+    height: 56px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: white;
+}
+.enter-form .signup-form__cta svg {
+    margin-right: 10px;
+    display: block;
+}
+.enter-form  .signup-form__cta.active {
+    color: transparent;
+}
+
+@media (max-width: 767px){
+
+    .enter-form .form__field-container input {
+        height: 44px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .enter-form .signup-form__cta {
+        height: 44px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+.enter-form .signup-form__legal {
+    margin-top: 12px!important;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    text-align: center;
+    color: #6D787E;
+}
+.enter-form  .form__field-container .error {
+    color: red;
+}
+
+.button--full {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.button {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1;
+    color: #03314b;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: .6875rem 1rem .8125rem;
+    font-family: inherit;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(253,149,52);
+    border: .125rem rgb(253,149,52);
+    background-image: linear-gradient(0deg, rgba(255,255,255,0), #e5cfcf);
+    border-radius: .25rem;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+.button__sprite-wrapper[data-v-459ca6fc] {
+    height: 16px;
+    display: flex;
+    align-items: center;
+    margin-right: .5rem
+}
+
+.button:hover {
+    background-color: rgb(253,121,2);
+    border-color: rgb(253,121,2);
+}
+
+.pay-wrapper {
+    flex: 1;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-top: 9px;
+}
+.pay-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #002E48;
+    margin-bottom: 8px;
+    height: 45px;
+    overflow: hidden;
+}
+.pay-text__more {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1973B8;
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+.pay-text__hide {
+    display: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1973B8;
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+
+.pay-text__more svg {
+    margin-left: 4px;
+}
+.pay-text__hide svg {
+    margin-left: 4px;
+}
+.pay__input {
+    position: relative;
+    display: none;
+}
+.pay-info {
+    margin-top: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+/*.form {
+    display: block;
+    margin-top: 0em;
+}*/
+
+.card-wrapper {
+    background: -o-radial-gradient(50% -33.93%, 154.64% 133.93%, #767A7D 0%, #191E24 100%);
+    background: radial-gradient(154.64% 133.93% at 50% -33.93%, #767A7D 0%, #191E24 100%);
+    -webkit-box-shadow: 0px 32px 30px -30px rgb(25 30 36 / 40%);
+    box-shadow: 0px 32px 30px -30px rgb(25 30 36 / 40%);
+    border-radius: 16px;
+    padding: 84px 16px 21px;
+    margin-bottom: 24px;
+    position: relative;
+}
+.card-logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+}
+.card .input {
+    position: relative;
+}
+.card .input span {
+    display: block;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #A5A6A9;
+    margin-bottom: 6px;
+}
+.card .input input {
+    background: transparent;
+    border: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    letter-spacing: 4px;
+    width: 100%;
+    padding: 0;
+    outline: none;
+}
+.card-bottom {
+    display: flex;
+    margin-top: 19px;
+}
+.card-bottom .input {
+    width: 92px;
+}
+.card .input {
+    position: relative;
+}
+.card button {
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(253,149,52);
+    background-image: linear-gradient(0deg, rgba(255,255,255,0), #e5cfcf);
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 44px;
+    cursor: pointer;
+}
+.card button:hover{
+    background-color: rgb(253,121,2);
+    border-color: rgb(253,121,2);
+}
+.card button strong {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #03314B;
+}
+.card button .loading {
+    display: none;
+}
+.pay-wrapper h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 135%;
+    color: #002E48;
+    margin-bottom: 2px;
+}
+.pay-bottom {
+    padding: 16px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #BAC8CE;
+}
+
+.pay-wrapper h1 svg{
+    margin-left: 7px;
+}
+.pay-info span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #6D787E;
+    margin-right: 14px;
 }
